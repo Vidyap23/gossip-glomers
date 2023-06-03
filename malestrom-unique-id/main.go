@@ -21,7 +21,7 @@ func main(){
 		// Update the message type to return back.
 		currentTime := time.Now()
 		str := fmt.Sprintf("%v", body["msg_id"])
-		msg_id := str + currentTime.Format("2006-01-02")
+		msg_id := str + currentTime.Format("2006-01-02 15:04:05.000000")
 		body["type"] = "generate_ok"
 		body["id"] = msg_id
 	
